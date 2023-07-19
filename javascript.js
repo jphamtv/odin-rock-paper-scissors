@@ -9,8 +9,7 @@ function getPlayerChoice() {
   playerChoice = input.toLowerCase();
     console.log(playerChoice);
     
-    // Return the player's choice
-    return playerChoice;
+  return playerChoice;
 }
 
 function getComputerChoice() {
@@ -25,8 +24,7 @@ function getComputerChoice() {
   let computerChoice = choices[randomNumber];
     console.log(computerChoice)
 
-    // Return the computer's choice
-    return computerChoice;
+  return computerChoice;
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -53,6 +51,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
+
   // Declare variables
   let numOfRounds = 0;
   let playerScore = 0;
@@ -75,10 +74,10 @@ function game() {
                 || result === "You lose! Rock beats Scissors") {
         computerScore++;
     }
-    console.log(`Player: ${playerScore}, Computer: ${computerScore}`)
+  console.log(`Player: ${playerScore}, Computer: ${computerScore}`)
   }
 
-  // At the end of 5 rounds, the highest score wins the game
+  // At the end of 5 rounds, determine the winner of the game
   if (playerScore > computerScore) {
     console.log("Congrats! You beat the computer!");
   } else if (computerScore > playerScore) {
@@ -87,3 +86,5 @@ function game() {
     console.log("It's a tie. Neither man or machine has won.")
   }
 }
+
+game();
