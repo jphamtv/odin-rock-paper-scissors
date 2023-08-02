@@ -1,0 +1,62 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  /* border: 1px dotted red; */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Round */
+.round-container {
+  display: flex;
+}
+
+.round-wrapper {
+  display: flex;
+}
+
+#round {
+  margin-left: 4px;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+}
+
+.button-wrapper {
+  display: flex;
+}
+
+button {
+  padding: 8px 16px;
+}
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+}
+
+.scoreboard-wrapper {
+  display: flex;
+}
+
+#player-score {
+  margin-left: 4px;
+  margin-right: 8px;
+}
+
+#computer-score {
+  margin-left: 4px;
+}

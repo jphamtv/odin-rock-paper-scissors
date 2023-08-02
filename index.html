@@ -5,11 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
-  <script src="javascript.js"></script>
+  <script src="javascript.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+  <div class="round-container">
+    <div class="round-wrapper">
+      <div>Round:</div>
+      <div id="current-round">1</div>
+    </div>
+  </div>
+  <div class="button-container">
+    <div class="button-wrapper">
+      <button id="rock">Rock</button>
+      <button id="paper">Paper</button>
+      <button id="scissors">Scissors</button>
+      <div id="announce_game_winner"></div>
+    </div>
+  </div>
+  <div class="scoreboard-container">
+    <div class="scoreboard-wrapper">
+      <div>Human:</div>
+      <div id="player-score">0</div>
+      <div>Machine:</div>
+      <div id="computer-score">0</div>
+    </div>
+    <div class="announce_round_winner"></div>
+  </div>
 </body>
 
 </html>
