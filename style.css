@@ -4,11 +4,12 @@
   margin: 0;
   padding: 0;
   line-height: 1.5;
-  /* border: 1px dotted red; */
+  /* outline: 1px dotted rgb(255, 123, 123); */
 }
 
 html {
   box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 *,
@@ -17,22 +18,88 @@ html {
   box-sizing: inherit;
 }
 
-/* Round */
-.round-container {
-  display: flex;
+body {
+  height: 100vh;
 }
 
-.round-wrapper {
+main {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-#round {
-  margin-left: 4px;
+/* header */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 800px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 20px;
+}
+
+
+/* Scoreboard */
+.scoreboard-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 800px;
+}
+
+.scoreboard-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-score-wrapper,
+.computer-score-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 40px;
+}
+
+
+#player-score,
+#computer-score {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  margin-top: 10px;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Buttons */
 .button-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 200px;
+  width: 800px;
 }
 
 .button-wrapper {
@@ -41,22 +108,77 @@ html {
 
 button {
   padding: 8px 16px;
+  height: 100px;
+  width: 160px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 24px;
 }
 
-/* Scoreboard */
-.scoreboard-container {
+.game-over-wrapper {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-winner {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#new-game {
+  height: 80px;
+  width: 200px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  font-size: 20px;
+}
+
+/* Choice */
+.choice-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 800px;
+}
+
+.player-choice-wrapper,
+.computer-choice-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 40px;
+}
+
+#player-choice,
+#computer-choice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100px;
+  margin-top: 10px;
+  background-color: rgb(250, 250, 250);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+/* Results */
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 800px;
+}
+
+.result-wrapper {
   display: flex;
 }
 
-.scoreboard-wrapper {
-  display: flex;
-}
 
-#player-score {
-  margin-left: 4px;
-  margin-right: 8px;
-}
-
-#computer-score {
-  margin-left: 4px;
-}

@@ -10,29 +10,50 @@
 </head>
 
 <body>
-  <div class="round-container">
-    <div class="round-wrapper">
-      <div>Round:</div>
-      <div id="current-round">1</div>
-    </div>
+  <header class="header-container">
+    <div class="header-wrapper">
+      <h1>ROCK PAPER SCISSORS</h1>
+      <p>FIRST TO 5 WINS</p>
+    </header>
   </div>
-  <div class="button-container">
-    <div class="button-wrapper">
-      <button id="rock">Rock</button>
-      <button id="paper">Paper</button>
-      <button id="scissors">Scissors</button>
-      <div id="announce_game_winner"></div>
+  <main>
+    <div class="scoreboard-container">
+      <div class="scoreboard-wrapper">
+        <div class="player-score-wrapper">
+          <div>You</div>
+          <div id="player-score">0</div>
+        </div>
+        <div class="computer-score-wrapper">
+          <div>Computer</div>
+          <div id="computer-score">0</div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="scoreboard-container">
-    <div class="scoreboard-wrapper">
-      <div>Human:</div>
-      <div id="player-score">0</div>
-      <div>Machine:</div>
-      <div id="computer-score">0</div>
+    <div class="button-container">
+      <div class="button-wrapper">
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+      </div>
+      <div class="game-over-wrapper">
+        <div id="game-winner"></div>
+        <button id="new-game">Play Again</button>
+      </div>
     </div>
-    <div class="announce_round_winner"></div>
-  </div>
+    <div class="choice-container">
+      <div class="player-choice-wrapper">
+        <div>You choose</div>
+        <div id="player-choice">?</div>
+      </div>
+      <div class="computer-choice-wrapper">
+        <div>Computer chooses</div>
+        <div id="computer-choice">?</div>
+      </div>
+    </div>
+    <div class="result-container">
+      <div id="round-winner"></div>
+    </div>
+  </main>
 </body>
 
 </html>
