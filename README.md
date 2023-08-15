@@ -1,3 +1,3 @@
 # The Odin Project
 
-Rock, Paper, Scissors
+Rock, Paper, Scissors Project
